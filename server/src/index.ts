@@ -12,5 +12,8 @@ wws.on("connection", function(socket){
         if(e.toString() === "ping"){
             socket.send("pong");
         }
+        else{
+            socket.send("please ping")
+        }
     })
 })
